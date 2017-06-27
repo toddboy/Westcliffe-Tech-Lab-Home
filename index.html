@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-      <title>Westcliffe Tech Lab</title>
-      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-     <style>
-         body   {
-            background:  linear-gradient(white,red);
-            border:  6px ridge black;
-            height:  630px;
-            border-radius: 15%;
+ <head>
+       <title>Westcliffe Elementary Tech Lab</title>
+       <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+       <style>
+        div.container {
+           border: 4px solid black;
 }
-         h1     {
-            margin-left:  50px;
-            margin-top:  60px;
-            text-align:  center;
-            border:  5px ridge black;
-            background-color:  white;
-            width:  850px;
-            font-size:  50px;
-            font-family: 'Syncopate', sans-serif;
-            animation-iteration-count: 2;
+        h1    {
+           font-family: 'Orbitron', sans-serif;
+           text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+           font-size:  60px;
 }
-        .animated rotateIn  {
-            animation-duration:  2s;
+        header, footer {
+           padding: 1em;
+           color: white;
+           background:  linear-gradient(red,white);
+           clear: left;
+           text-align: center;
 }
-         button {
+       header  {
+           border-bottom:  4px solid black;
+}
+       footer  {
+           border-top:  4px solid black;
+           color:  black;
+           font-weight:  bold;
+
+}   
+       #headeralign  {
+           display:  inline-block;
+           margin-left:  20px
+}
+       #logo  {
+           background-color:  white;
+           border:  4px ridge black;
+           height:  130px;
+           width:  130px;
+           margin-top:  10px;
+}
+      #middle   {
+           height:  315px;
+}              
+      marquee  {
+           font-size:  30px;
+           color:  red;
+           border:  4px ridge black;
+           width:  800px;
+           margin-left:  278px;
+           margin-top:  10px;
+           font-family: 'Gloria Hallelujah', cursive;
+}
+      h3   {
+           border:  6px solid black;
+           font-size:  40px;
+           margin-left:  453px;
+           margin-top:  10px;
+           width:  450px;
+           text-align:  center;
+           font-family: 'Syncopate', sans-serif;
+}
+      a   {
+           text-decoration:  none;
+           color:  red;
+           font-weight:  bold;
+} 
+       button {
             height:  100px;
             width:  175px;
-            margin-left:  40px;
-            margin-top:  60px;
+            margin-left:  37px;
             font-size:  30px;
             color: red;
             border:  4px ridge black;
@@ -47,66 +87,33 @@
             background-color: yellow;
             box-shadow: 0 5px #666;
             transform: translateY(4px);
-}
-        a   {
-            text-decoration: none;
-            color: red;
-}
-        img   {
-            width:  145px;
-            height: 125px;
-            margin-left:  40px;
-            margin-top:  50px;
-            border:  5px ridge red;
-            animation-iteration-count: 2;
-}
-        marquee  {
-            font-size:  40px;
-            font-weight: bold;
-            border:  5px ridge black;
-            width:  700px;
-            margin-left: 317px;
-            background-color:  white;
-            font-family: 'Gloria Hallelujah', cursive;
-            color:  red;
-}
-        .header  {
-            float: left;
-           }
-        h3 {
-           margin:  auto;
-           border:  6px ridge black;
-           background-color:  white;
-           width:  400px;
-           text-align:  center;
-           font-size:  40px;
-           font-family: 'Syncopate', sans-serif;
-           }
-     </style>
-</head>
-<body>
-      <div class="header">
-        <img class ="animated rotateIn" src="https://www.greenville.k12.sc.us/westclif/images/frntschl3_soft.jpg">
-      </div>
-      <div class="header">
-        <h1 class="animated rotateIn">Westcliffe Tech Lab Grade Level Activities</h1>
-      </div>
-      <div>
-        <img  class="animated rotateIn" src="https://www.greenville.k12.sc.us/westclif/images/frntschl3_soft.jpg">
-      </div>
-      <br><br>
-      <hr><hr>
-      <marquee>Click on the grade level you wish to go to!</marquee>
-      <div>
-            <button type=button><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-Kinder/" target="_blank">Kindergarten</a></button>
-            <button type=button><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-1st/" target="_blank">1st Grade</a></button>
-            <button type=button><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-2nd/" target="_blank">2nd Grade</a></button>
-            <button type=button><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-3rd/" target="_blank">3rd Grade</a></button>
-            <button type=button><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-4th/" target="_blank">4th Grade</a></button>
-            <button type=button><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-5th/" target="_blank">5th Grade</a></button>
-     </div><br>
-     <div>
-            <h3><a href="https://adfs.greenville.k12.sc.us/adfs/ls/?SAMLRequest=hZJPT8MwDMXvSHyHKPe262AIorXTACEm8adihQO3LHPbTGlc4rSDb0%2FXgYADcH2x%2FX7P8XT2WhvWgSONNuFxOOIMrMK1tmXCH%2FOr4JTP0sODKcnaNGLe%2Bso%2BwEsL5FnfaUkMDwlvnRUoSZOwsgYSXonl%2FPZGjMORaBx6VGg4W1wmfNNUtVVqJXEDVVVqVTQb2NSyMGgUamOh1EVVIGdPn1jjHdaCqIWFJS%2Bt76VRPAlGZ8F4ksfH4mgijk6eOcs%2BnM613Sf4C2u1LyJxnedZkN0v82FAp9fg7vrqhJeIpYFQYb2zzySR7nq5kIaAszkRON8DXqCltga3BNdpBY8PNwmvvG9IRNF2uw2%2FxkQyKh2A7bQxQKpCNBS2FElFPB12LIaY7tty%2Fw4hPyF4%2Bq%2FNNPrmkH586S7p4jJDo9UbmxuD2wsH0vcxvWv7lFfoaul%2Fh4jDeFD0OiiGUtFaakDpQsOasyjdu%2F68nf6i3gE%3D&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fdrive.google.com%252F%253Furp%253Dhttps%25253A%25252F%25252Fwww.google.com%25252F_%25252Fchrome%25252Fnewtab%25253Fespv%25253D2%252526ie%25253DU%2523%26followup%3Dhttps%253A%252F%252Fdrive.google.com%252F%253Furp%253Dhttps%25253A%25252F%25252Fwww.google.com%25252F_%25252Fchrome%25252Fnewtab%25253Fespv%25253D2%252526ie%25253DU%26service%3Dwise%26ltmpl%3Ddrive" target="_blank">Google Drive</a></h3>
-     </div>
-</body>
+}        
+       </style>
+ </head>
+ <body>
+        <div class="container">            
+             <header>
+                <div id="headeralign">
+                   <img  id="logo" src="wcwildcat.jpg">
+               </div>
+               <div id="headeralign">
+                  <h1>Westcliffe Elementary<br>Technology Lab</h1>
+               </div>
+              <div id="headeralign">
+                    <img id="logo" src="wcwildcat.jpg">
+              </div>
+            </header>
+           <div id="middle">  
+              <marquee><b>Select Google Drive or the grade level you wish to go to!</marquee>
+              <h3><a href="https://adfs.greenville.k12.sc.us/adfs/ls/?SAMLRequest=hZJPT8MwDMXvSHyHKPe262AIorXTACEm8adihQO3LHPbTGlc4rSDb0%2FXgYADcH2x%2FX7P8XT2WhvWgSONNuFxOOIMrMK1tmXCH%2FOr4JTP0sODKcnaNGLe%2Bso%2BwEsL5FnfaUkMDwlvnRUoSZOwsgYSXonl%2FPZGjMORaBx6VGg4W1wmfNNUtVVqJXEDVVVqVTQb2NSyMGgUamOh1EVVIGdPn1jjHdaCqIWFJS%2Bt76VRPAlGZ8F4ksfH4mgijk6eOcs%2BnM613Sf4C2u1LyJxnedZkN0v82FAp9fg7vrqhJeIpYFQYb2zzySR7nq5kIaAszkRON8DXqCltga3BNdpBY8PNwmvvG9IRNF2uw2%2FxkQyKh2A7bQxQKpCNBS2FElFPB12LIaY7tty%2Fw4hPyF4%2Bq%2FNNPrmkH586S7p4jJDo9UbmxuD2wsH0vcxvWv7lFfoaul%2Fh4jDeFD0OiiGUtFaakDpQsOasyjdu%2F68nf6i3gE%3D&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fdrive.google.com%252F%253Furp%253Dhttps%25253A%25252F%25252Fwww.google.com%25252F_%25252Fchrome%25252Fnewtab%25253Fespv%25253D2%252526ie%25253DU%2523%26followup%3Dhttps%253A%252F%252Fdrive.google.com%252F%253Furp%253Dhttps%25253A%25252F%25252Fwww.google.com%25252F_%25252Fchrome%25252Fnewtab%25253Fespv%25253D2%252526ie%25253DU%26service%3Dwise%26ltmpl%3Ddrive" target="_blank">Google Drive</a></h3>      
+              <button type="button"><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-Kinder/" target="_blank">Kindergarten</a></button>
+              <button type="button"><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-1st/" target="_blank">1st Grade</a></button>
+              <button type="button"><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-2nd/" target="_blank">2nd Grade</a></button>
+              <button type="button"><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-3rd/" target="_blank">3rd Grade</a></button>
+              <button type="button"><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-4th/" target="_blank">4th Grade</a></button>
+              <button type="button"><a href="https://toddboy.github.io/Westcliffe-Tech-Lab-5th/" target="_blank">5th Grade</a></button>
+          </div>
+           <footer>Westcliffe Elementary School</footer>      
+        </div>       
+ </body>
 </html>
